@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/text_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="00:00:00"
+        android:layout_marginTop="@dimen/margin_30"
+        android:text="@string/default_stopwatch_time"
         android:textColor="@color/black"
-        android:textSize="45sp"
+        android:textSize="@dimen/text_size_45"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +22,8 @@
         android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="Start"
+        android:layout_margin="@dimen/margin_30"
+        android:text="@string/stopwatch_start_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_time" />
 
@@ -31,17 +31,17 @@
         android:id="@+id/button_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pause"
+        android:text="@string/stopwatch_pause_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button_start" />
 
     <Button
-        android:id="@+id/button_stop"
+        android:id="@+id/button_stop_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:text="Stop"
+        android:layout_marginEnd="@dimen/margin_30"
+        android:text="@string/stopwatch_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button_start" />
 
